@@ -42,6 +42,10 @@ func Run() {
 	if err != nil {
 		log.Fatalln(err)
 	}
+	if len(dat) > 0 {
+		// remove new line character
+		dat = dat[:len(dat)-1]
+	}
 
 	clipboard.WriteAll(string(dat))
 	text, _ := clipboard.ReadAll()
