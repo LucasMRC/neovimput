@@ -12,8 +12,8 @@ import (
 
 const (
 	FILE_NAME      = "neovimput"
-	BUFFER_OPTIONS = "-c 'setlocal cmdheight=0' -c 'setlocal laststatus=0' -c 'setlocal filetype=markdown' -c 'noremap <silent> : <Nop>'"
-	SAVE_CMD       = "-c 'noremap <C-c> <CMD>silent wq<CR>'"
+	BUFFER_OPTIONS = "-c 'setlocal cmdheight=0' -c 'setlocal laststatus=0' -c 'setlocal filetype=markdown' -c 'noremap <silent> : <Nop>' -c 'startinsert'"
+	SAVE_CMD       = "-c 'noremap <C-q> <CMD>silent wq<CR>' -c 'inoremap <C-q> <CMD>silent wq<CR>'"
 )
 
 func Run() {

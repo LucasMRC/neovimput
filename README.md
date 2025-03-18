@@ -20,9 +20,9 @@ The window will have the title `Neovimput`, so that you can target it on your [i
 
 ### Where do we go from here?
 
-Two things I want to tackle next:
-  1. Logs. Simple, but something to allow me to follow the trace always.
-  2. A small config file for the write-and-quit command and the filetype.
+Things I want to tackle next:
+- [ ] Input to choose filetype (for treesitter detection :wink:)
+- [ ] A small config file for the write-and-quit command and the default filetype.
 
 ### Other comments
 
