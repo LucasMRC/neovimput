@@ -12,7 +12,7 @@ import (
 
 const (
 	FILE_NAME      = "neovimput"
-	BUFFER_OPTIONS = "-c 'setlocal cmdheight=0' -c 'setlocal laststatus=0' -c 'setlocal filetype=markdown' -c 'noremap <silent> : <Nop>' -c 'startinsert'"
+	BUFFER_OPTIONS = "-c 'setlocal cmdheight=0' -c 'setlocal laststatus=0' -c 'setlocal filetype=markdown' -c 'noremap <silent> : <Nop>' -c 'startinsert' -c 'setlocal shortmess+=c'"
 	SAVE_CMD       = "-c 'noremap <C-q> <CMD>silent wq<CR>' -c 'inoremap <C-q> <CMD>silent wq<CR>'"
 )
 
@@ -48,8 +48,6 @@ func Run() {
 	}
 
 	clipboard.WriteAll(string(dat))
-	text, _ := clipboard.ReadAll()
-	fmt.Println(text)
 
 	if err = os.Remove(file_path); err != nil {
 		log.Printf(`
