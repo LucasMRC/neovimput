@@ -21,7 +21,7 @@ The window will have the title `Neovimput`, so that you can target it on your [i
 ### Where do we go from here?
 
 Things I want to tackle next:
-- [ ] Input to choose filetype (for treesitter detection :wink:)
+- [ ] ~Input to choose filetype (for treesitter detection :wink:)~
 - [ ] A small config file for the write-and-quit command and the default filetype.
 
 ### Other comments
